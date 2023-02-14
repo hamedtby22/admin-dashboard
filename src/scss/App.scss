@@ -1,0 +1,107 @@
+@use '../scss/' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $fontFamily;
+    color: $txtColor;
+    font-size: $fontSizeMedium;
+    line-height: 1.5;
+    background-color: $bodyBg;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.7px;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+img {
+    width: 100%;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+.mb {
+    margin-bottom: 15px;
+
+    @include tablet {
+        margin-bottom: $mobileSpacing;
+    }
+}
+
+
+.title {
+    font-size: $fontSizeMedium;
+    font-weight: 700;
+    color: $txtColor-dark;
+}
+
+.txt-success {
+    color: $green;
+}
+
+.txt-danger { 
+    color: $red;
+}
+.card {
+    padding: 30px;
+    box-shadow: 1px 0px 2px 2px #989898;
+    border-radius: $borderRadius;
+
+    @include tablet {
+        margin-top: 20px;
+    }
+}
+.light-background {
+    background-color: $mainBg;
+    border: 3px solid $bodyBg;
+    color: #000;
+}
+
+.dark-background {
+    background-color: $dark;
+    color: #fff;
+}
+
+.purple-color {
+    background-color: $purple;
+    color: #fff;
+}
+
+.red-color {
+    background-color: $red;
+    color: #fff;
+}
+
+.cyan-color {
+    background-color: $cyan;
+    color: #fff;
+}
+
+.green-color {
+    background-color: $green;
+    color: #fff;
+}
+
+.orange-color {
+    background-color: $orange;
+    color: #fff;
+}

@@ -1,0 +1,17 @@
+@use '../../scss/' as *;
+
+tbody > tr:hover {
+    background-color: rgba(173, 173, 173, 0.089);
+}
+
+
+.table-wrapper {
+    
+    button {
+        width: 100%;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+    }
+
+}

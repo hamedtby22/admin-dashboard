@@ -1,0 +1,82 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -24px;
+
+    @include tablet {
+        margin: 0 -12px;
+    }
+}
+
+[class*="col-"] {
+    padding: 0  24px;
+
+    @include tablet {
+        padding: 0 12px;
+    }
+}
+
+.col-12 {
+    width: 100%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-7 {
+    width: 58.33% ;
+}
+.col-6 {
+    width: 50%;
+}
+.col-5 {
+    width: 41.67%;
+}
+.col-4 {
+    width: 33.34%;
+}
+
+// medium screen
+
+@include tablet {
+.col-md-12 {
+    width: 100%;
+}
+.col-md-8 {
+    width: 66.66%;
+}
+.col-md-6 {
+    width: 50%;
+}
+.col-md-4 {
+    width: 40%;
+}
+
+.hide-md {
+    display: none;
+}
+}
+
+// small screen
+
+@include mobile {
+.col-sm-12 {
+    width: 100%;
+}
+.col-sm-8 {
+    width: 66.66%;
+}
+.col-sm-6 {
+    width: 50%;
+}
+.col-sm-4 {
+    width: 40%;
+}
+
+    .hide-sm {
+        display: none;
+    }
+}

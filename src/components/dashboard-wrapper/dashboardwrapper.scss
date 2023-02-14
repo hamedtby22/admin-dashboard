@@ -1,0 +1,39 @@
+@use '../../scss/' as *;
+
+.dashboard-wrapper {
+    @include flex(stretch);
+    
+    @include tablet {
+        flex-direction: column;
+    }
+
+    &__main {
+        padding-right: $sideBarWidth;
+        flex-grow: 1;
+
+        @include tablet {
+            padding-right: 0;
+        }
+    }
+
+    &__right {
+        height: 100vh;
+        box-shadow: 1px 0px 2px 2px #989898;
+        border-top-left-radius: $borderRadius;
+        border-bottom-left-radius: $borderRadius;
+        width: $sideBarWidth;
+        padding: $spacing;
+        position: fixed;
+        top: 0%;
+        right: 0%;
+
+        @include tablet {
+            position: relative;
+            padding: $mobileSpacing;
+            margin-top: $mobileSpacing;
+            border-radius: $borderRadius;
+            width: 100%;
+            height: max-content;
+        }
+    }
+}

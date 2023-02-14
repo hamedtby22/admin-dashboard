@@ -1,0 +1,19 @@
+@use '../../scss/' as *;
+
+.progress-bar {
+    height: 10px;
+    background-color: $bodyBg;
+    border-radius: 2.5px;
+
+    &__innerG {
+        border-radius: 2.5px;
+        height: 100%;
+        background-color: $green;
+
+    }
+    &__innerR {
+        border-radius: 2.5px;
+        height: 100%;
+        background-color: $red;
+    }
+}

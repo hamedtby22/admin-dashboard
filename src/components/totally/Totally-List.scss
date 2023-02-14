@@ -1,0 +1,37 @@
+@use '../../scss/' as *;
+
+.overall-list {
+    & > * ~ * {
+        margin-top: 15px;
+    }
+    
+    margin-bottom: 30px;
+
+    &__item {
+        @include flex(center,flex-start);
+
+        &__icon {
+            @include flex();
+            border-radius: 50%;
+            background-color: $bodyBg;
+            margin-right: $spacing;
+
+            i{
+                font-size: 1.9rem;
+                color: $black;
+            }
+        }  
+
+        &__info {
+            @include flex(flex-start,space-between);
+            flex-direction: column;
+
+            :first-child {
+                font-weight: bolder;
+                color: rgb(94, 94, 94);
+            }
+        }
+        
+    }
+
+}

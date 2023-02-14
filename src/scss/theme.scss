@@ -1,0 +1,30 @@
+@use './variables' as *;
+
+.theme-mode-light {
+    background-color: $mainBg-light;
+    color: $txtColor-dark;
+}
+
+.theme-mode-dark {
+    background-color: $mainBg-dark;
+    color: $txtColor-light;
+}
+.theme-color-purple {
+    background-color: $mainColor-purple;
+}
+
+.theme-color-red {
+    background-color: $mainColor-red;
+}
+
+.theme-color-cyan {
+    background-color: $mainColor-cyan;
+}
+
+.theme-color-green {
+    background-color: $mainColor-green;
+}
+
+.theme-color-orange {
+    background-color: $mainColor-orange;
+}

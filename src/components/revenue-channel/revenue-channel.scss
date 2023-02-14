@@ -1,0 +1,19 @@
+@use '../../scss/' as *; 
+
+.revenue-list {
+    & > * ~ * {
+        margin-top: 15px;
+    }
+
+    &__item {
+        &__title {
+            @include flex(center,space-between);
+            font-size: $fontSizeMedium;
+            margin-bottom: 5px;
+            font-weight: bold;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}
